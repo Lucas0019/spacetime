@@ -1,1 +1,34 @@
-GET http://localhost:3333/users
+###
+GET http://localhost:3333/memories
+
+###
+GET http://localhost:3333/memories/7dbbc47b-1945-4f90-920c-1e7eb2f7090f
+
+###
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+  "content": "My Second memory",
+  "coverUrl": "https://avatars.githubusercontent.com/u/52923100?v=4",
+  "isPublic": true,
+  "userId": "5bab84a7-8cd7-41a7-a573-2fb1f9d1ce53"
+}
+
+
+###
+
+PUT http://localhost:3333/memories/d16b5103-f1e9-4d19-b122-8007f5aff084
+Content-Type: application/json
+
+{
+  "content": "React Log",
+  "coverUrl": "https://avatars.githubusercontent.com/u/52923100?v=4",
+  "isPublic": false,
+  "userId": "5bab84a7-8cd7-41a7-a573-2fb1f9d1ce53"
+}
+
+###
+
+DELETE http://localhost:3333/memories/7dbbc47b-1945-4f90-920c-1e7eb2f7090f
+
